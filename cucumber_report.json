@@ -1,0 +1,80 @@
+[
+  {
+    "description": "    Testing Google Page",
+    "keyword": "Feature",
+    "name": "Demo Google Test",
+    "line": 1,
+    "id": "demo-google-test",
+    "tags": [],
+    "uri": "features\\Feature Files\\DemoGoogleTest.feature",
+    "elements": [
+      {
+        "id": "demo-google-test;demo-test",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Demo Test",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 8
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "Google page is open",
+            "match": {
+              "location": "features\\StepDefinition\\DemoGoogleTestDefn.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "User is on Google Page",
+            "match": {
+              "location": "features\\StepDefinition\\DemoGoogleTestDefn.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "Enter some keyword to search",
+            "match": {
+              "location": "features\\StepDefinition\\DemoGoogleTestDefn.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "Verify results",
+            "match": {
+              "location": "features\\StepDefinition\\DemoGoogleTestDefn.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

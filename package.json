@@ -1,0 +1,29 @@
+{
+  "name": "automation-magnus",
+  "version": "1.0.0",
+  "description": "Magnus Automation",
+  "main": "index.js",
+  "author": "Nitin",
+  "license": "ISC",
+  "scripts": {
+    "test": "cucumber-js -f json:cucumber_report.json --tags @smoke --retry 2 --parallel 4",
+    "test:report": "node report.js",
+    "test:reportXml": "node index.js",
+    "cucumber": "cucumber-js ./features/Feature Files"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "cucumber": "^6.0.5",
+    "cucumber-html-reporter": "^5.1.0",
+    "puppeteer": "^2.0.0"
+  },
+  "dependencies": {
+    "config": "^3.3.1",
+    "cucumberjs-junitxml": "^1.0.0",
+    "cucumber-junit-convert": "^1.1.0",
+    "fs": "0.0.1-security",
+    "fs-extra": "^9.0.1",
+    "moment": "^2.28.0",
+    "node-powershell": "^4.0.0"
+  }
+}
