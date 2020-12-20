@@ -6,7 +6,7 @@
   "author": "Nitin",
   "license": "ISC",
   "scripts": {
-    "test": "cucumber-js -f json:cucumber_report.json --tags @smoke --retry 2 --parallel 4",
+    "test": "cucumber-js -f json:cucumber_report.json --tags @smoke --retry 0 --parallel 0",
     "test:report": "node report.js",
     "test:reportXml": "node index.js",
     "cucumber": "cucumber-js ./features/Feature Files"

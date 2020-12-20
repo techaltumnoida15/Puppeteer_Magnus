@@ -9,8 +9,13 @@ const config = require('config')
 class PO_DemoGoogle{
     constructor() {}
 
-    async enterSearcString(){
-        await helper.typeText(page, '')
+    async enterSearcString(searchString){
+        await helper.typeText(page, searchString, 'input[name="q"]')
+    }
+
+    async getPageTitle(){
+        var pageTitle = await page.title()
+        return pageTitle
     }
 }
 

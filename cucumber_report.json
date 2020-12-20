@@ -22,16 +22,27 @@
         "type": "scenario",
         "steps": [
           {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "Magnus\\node_modules\\cucumber\\lib\\support_code_library_builder\\index.js:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1106000000
+            }
+          },
+          {
             "arguments": [],
             "keyword": "Given ",
             "line": 6,
             "name": "Google page is open",
             "match": {
-              "location": "features\\StepDefinition\\DemoGoogleTestDefn.js:10"
+              "location": "features\\StepDefinition\\DemoGoogleTestDefn.js:13"
             },
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 4428000000
             }
           },
           {
@@ -40,11 +51,11 @@
             "line": 10,
             "name": "User is on Google Page",
             "match": {
-              "location": "features\\StepDefinition\\DemoGoogleTestDefn.js:15"
+              "location": "features\\StepDefinition\\DemoGoogleTestDefn.js:25"
             },
             "result": {
               "status": "passed",
-              "duration": 4000000
+              "duration": 64000000
             }
           },
           {
@@ -53,11 +64,11 @@
             "line": 11,
             "name": "Enter some keyword to search",
             "match": {
-              "location": "features\\StepDefinition\\DemoGoogleTestDefn.js:20"
+              "location": "features\\StepDefinition\\DemoGoogleTestDefn.js:32"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 9088000000
             }
           },
           {
@@ -66,11 +77,22 @@
             "line": 12,
             "name": "Verify results",
             "match": {
-              "location": "features\\StepDefinition\\DemoGoogleTestDefn.js:24"
+              "location": "features\\StepDefinition\\DemoGoogleTestDefn.js:38"
             },
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "Magnus\\node_modules\\cucumber\\lib\\support_code_library_builder\\index.js:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 299000000
             }
           }
         ]

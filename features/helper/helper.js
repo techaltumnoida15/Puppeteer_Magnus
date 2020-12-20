@@ -5,7 +5,9 @@ module.exports = {
         return new Promise(resolve => setTimeout(resolve, ms))
     },
 
-    
+    enterURL: async function(page, url){
+        await page.goto(url);
+    },
 
     click: async function(page, selector){
         try {
