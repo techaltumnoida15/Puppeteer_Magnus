@@ -11,14 +11,18 @@ const _PO_DemoGoogle = new PO_DemoGoogle()
 
 
 Given('Google page is open', async function () {
-    // var baseUrl = config.get('baseURL')
-    // utility.writeLog(`Base URL = ` + baseUrl)
+  if(config.has('baseURL')){
+    var baseUrl = config.get('baseURL')
+    utility.writeLog(`Base URL = ` + baseUrl)
+  }
+  else{
+    utility.writeLog(`Unable to get values from config.`)
+  }
+  // var appName = config.get("appName")
+  // utility.writeLog('appName = ' + appName)
 
-    // var appName = config.get("appName")
-    // utility.writeLog('appName = ' + appName)
-
-    await helper.enterURL(page, 'http://www.google.com')
-    utility.writeLog(`Page is open and URL is entered.`)
+  await helper.enterURL(page, 'http://www.google.com')
+  utility.writeLog(`Page is open and URL is entered.`)
   });
 
 

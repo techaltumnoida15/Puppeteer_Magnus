@@ -29,7 +29,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1106000000
+              "duration": 25597000000
             }
           },
           {
@@ -41,8 +41,9 @@
               "location": "features\\StepDefinition\\DemoGoogleTestDefn.js:13"
             },
             "result": {
-              "status": "passed",
-              "duration": 4428000000
+              "status": "failed",
+              "duration": 30013000000,
+              "error_message": "TimeoutError: Navigation timeout of 30000 ms exceeded\n    at Promise.then (F:\\VS_CODE\\Automation Magnus\\node_modules\\puppeteer\\lib\\LifecycleWatcher.js:142:21)\n  -- ASYNC --\n    at Frame.<anonymous> (F:\\VS_CODE\\Automation Magnus\\node_modules\\puppeteer\\lib\\helper.js:111:15)\n    at Page.goto (F:\\VS_CODE\\Automation Magnus\\node_modules\\puppeteer\\lib\\Page.js:672:49)\n    at Page.<anonymous> (F:\\VS_CODE\\Automation Magnus\\node_modules\\puppeteer\\lib\\helper.js:112:23)\n    at Object.enterURL (F:\\VS_CODE\\Automation Magnus\\features\\helper\\helper.js:9:20)\n    at World.<anonymous> (F:\\VS_CODE\\Automation Magnus\\features\\StepDefinition\\DemoGoogleTestDefn.js:24:16)"
             }
           },
           {
@@ -51,11 +52,10 @@
             "line": 10,
             "name": "User is on Google Page",
             "match": {
-              "location": "features\\StepDefinition\\DemoGoogleTestDefn.js:25"
+              "location": "features\\StepDefinition\\DemoGoogleTestDefn.js:29"
             },
             "result": {
-              "status": "passed",
-              "duration": 64000000
+              "status": "skipped"
             }
           },
           {
@@ -64,11 +64,10 @@
             "line": 11,
             "name": "Enter some keyword to search",
             "match": {
-              "location": "features\\StepDefinition\\DemoGoogleTestDefn.js:32"
+              "location": "features\\StepDefinition\\DemoGoogleTestDefn.js:36"
             },
             "result": {
-              "status": "passed",
-              "duration": 9088000000
+              "status": "skipped"
             }
           },
           {
@@ -77,11 +76,10 @@
             "line": 12,
             "name": "Verify results",
             "match": {
-              "location": "features\\StepDefinition\\DemoGoogleTestDefn.js:38"
+              "location": "features\\StepDefinition\\DemoGoogleTestDefn.js:42"
             },
             "result": {
-              "status": "passed",
-              "duration": 0
+              "status": "skipped"
             }
           },
           {
@@ -92,7 +90,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 299000000
+              "duration": 1242000000
             }
           }
         ]
